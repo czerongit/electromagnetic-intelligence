@@ -30,6 +30,8 @@ Generative models are used in this repository.
 # Citation
 Each versioned release is archived on Zenodo with a persistent DOI and publication date. This archive provides a citable public record of the specific results disclosed in that version and supports claims of scholarly priority for those results.
 
+Repository archive: [https://doi.org/10.5281/zenodo.21986663](https://doi.org/10.5281/zenodo.21986663)
+
 I reserve all rights to formal publication of the material in this repository. Any use, reproduction, or derivative work must provide proper citation to the relevant release and DOI.
 
 Suspected plagiarism, material misattribution, or unauthorized reproduction may be reported to the relevant publisher, research-integrity office, professional body, or other authority with jurisdiction.
