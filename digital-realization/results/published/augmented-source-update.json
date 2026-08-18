@@ -1,0 +1,69 @@
+{
+  "contract": "exact one-direction reachable-carrier augmentation",
+  "results": [
+    {
+      "added_dimensions": 1,
+      "ambient_dimension": 128,
+      "augmented_dimension": 9,
+      "augmented_operator_applications": 2,
+      "augmented_status": "augmented-exact",
+      "augmented_update_ms": 0.521833,
+      "final_reachable_dimension": 9,
+      "full_matrix_free_recompile_ms": 0.653125,
+      "full_operator_applications": 12,
+      "maximum_markov_residual": 3.631737587939571e-16,
+      "old_reachable_dimension": 8,
+      "response_absolute_error": 6.245004513516506e-17,
+      "source_nonzeros": 129,
+      "update_speedup": 1.2515977333744703
+    },
+    {
+      "added_dimensions": 1,
+      "ambient_dimension": 512,
+      "augmented_dimension": 9,
+      "augmented_operator_applications": 2,
+      "augmented_status": "augmented-exact",
+      "augmented_update_ms": 1.110125,
+      "final_reachable_dimension": 9,
+      "full_matrix_free_recompile_ms": 1.859125,
+      "full_operator_applications": 12,
+      "maximum_markov_residual": 1.2412670766236366e-16,
+      "old_reachable_dimension": 8,
+      "response_absolute_error": 4.163336342344337e-17,
+      "source_nonzeros": 513,
+      "update_speedup": 1.6746987951807228
+    },
+    {
+      "added_dimensions": 1,
+      "ambient_dimension": 2048,
+      "augmented_dimension": 9,
+      "augmented_operator_applications": 2,
+      "augmented_status": "augmented-exact",
+      "augmented_update_ms": 1.450667,
+      "final_reachable_dimension": 9,
+      "full_matrix_free_recompile_ms": 2.613834,
+      "full_operator_applications": 12,
+      "maximum_markov_residual": 1.585807123641784e-16,
+      "old_reachable_dimension": 8,
+      "response_absolute_error": 6.938893903907228e-18,
+      "source_nonzeros": 2049,
+      "update_speedup": 1.8018153028917046
+    },
+    {
+      "added_dimensions": 1,
+      "ambient_dimension": 8192,
+      "augmented_dimension": 9,
+      "augmented_operator_applications": 2,
+      "augmented_status": "augmented-exact",
+      "augmented_update_ms": 5.72475,
+      "final_reachable_dimension": 9,
+      "full_matrix_free_recompile_ms": 13.115042,
+      "full_operator_applications": 12,
+      "maximum_markov_residual": 1.6184142622847344e-16,
+      "old_reachable_dimension": 8,
+      "response_absolute_error": 2.7755575615628914e-17,
+      "source_nonzeros": 8193,
+      "update_speedup": 2.290937071487838
+    }
+  ]
+}

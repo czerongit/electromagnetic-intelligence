@@ -1,0 +1,7 @@
+{
+  "host_id": "local-cuda-host",
+  "expected_gpu_model": "replace with the detected CUDA device name",
+  "expected_memory_gib": 0,
+  "access_method": "local",
+  "permitted_run_seconds": 3600
+}

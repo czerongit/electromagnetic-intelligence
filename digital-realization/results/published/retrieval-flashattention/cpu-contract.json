@@ -1,0 +1,46 @@
+{
+  "all_matched": true,
+  "backend": "CPU correctness preflight",
+  "cells": [
+    {
+      "condition": "l64-k4",
+      "field_accuracy": 1.0,
+      "field_response_ms": 0.078219,
+      "field_source_determination_ms": 0.614878,
+      "flash_reference_accuracy": 1.0,
+      "flash_reference_ms": 0.662031,
+      "matched": true
+    },
+    {
+      "condition": "l128-k8",
+      "field_accuracy": 1.0,
+      "field_response_ms": 0.026163,
+      "field_source_determination_ms": 0.844086,
+      "flash_reference_accuracy": 1.0,
+      "flash_reference_ms": 0.139535,
+      "matched": true
+    },
+    {
+      "condition": "l256-k16",
+      "field_accuracy": 1.0,
+      "field_response_ms": 0.03064,
+      "field_source_determination_ms": 1.087005,
+      "flash_reference_accuracy": 1.0,
+      "flash_reference_ms": 0.201172,
+      "matched": true
+    },
+    {
+      "condition": "l512-k64",
+      "field_accuracy": 1.0,
+      "field_response_ms": 0.033787,
+      "field_source_determination_ms": 0.874745,
+      "flash_reference_accuracy": 1.0,
+      "flash_reference_ms": 0.63944,
+      "matched": true
+    }
+  ],
+  "dtype": "float32",
+  "input_boundary": "answer-free relation covector",
+  "performance_claim": false,
+  "schema": "sprint-76.relation-native.cpu-contract.v2"
+}

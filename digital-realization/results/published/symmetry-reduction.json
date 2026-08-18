@@ -1,0 +1,138 @@
+{
+  "contract": "certified involutive source-symmetry compilation",
+  "results": [
+    {
+      "ambient_dimension": 16,
+      "compile_speedup": 0.5428845999839833,
+      "pair_count": 8,
+      "response_absolute_error": 4.440892098500626e-16,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        8,
+        8
+      ],
+      "sector_reachable_dimensions": [
+        8,
+        8
+      ],
+      "source_nonzeros": 16,
+      "split_factorized_actions": 16,
+      "split_maximum_block_width": 8,
+      "symmetry_compile_ms": 1.560875,
+      "unsplit_compile_ms": 0.847375,
+      "unsplit_factorized_actions": 24,
+      "unsplit_maximum_block_width": 16
+    },
+    {
+      "ambient_dimension": 32,
+      "compile_speedup": 0.6264735869604453,
+      "pair_count": 16,
+      "response_absolute_error": 1.7763568394002505e-15,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        16,
+        16
+      ],
+      "sector_reachable_dimensions": [
+        16,
+        16
+      ],
+      "source_nonzeros": 32,
+      "split_factorized_actions": 32,
+      "split_maximum_block_width": 16,
+      "symmetry_compile_ms": 2.936542,
+      "unsplit_compile_ms": 1.839666,
+      "unsplit_factorized_actions": 48,
+      "unsplit_maximum_block_width": 32
+    },
+    {
+      "ambient_dimension": 64,
+      "compile_speedup": 0.7599474952903762,
+      "pair_count": 32,
+      "response_absolute_error": 2.220446049250313e-15,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        32,
+        32
+      ],
+      "sector_reachable_dimensions": [
+        32,
+        32
+      ],
+      "source_nonzeros": 64,
+      "split_factorized_actions": 64,
+      "split_maximum_block_width": 32,
+      "symmetry_compile_ms": 6.170875,
+      "unsplit_compile_ms": 4.689541,
+      "unsplit_factorized_actions": 96,
+      "unsplit_maximum_block_width": 64
+    },
+    {
+      "ambient_dimension": 128,
+      "compile_speedup": 0.7111809254959098,
+      "pair_count": 64,
+      "response_absolute_error": 9.769962616701378e-15,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        64,
+        64
+      ],
+      "sector_reachable_dimensions": [
+        64,
+        64
+      ],
+      "source_nonzeros": 128,
+      "split_factorized_actions": 128,
+      "split_maximum_block_width": 64,
+      "symmetry_compile_ms": 16.47225,
+      "unsplit_compile_ms": 11.71475,
+      "unsplit_factorized_actions": 192,
+      "unsplit_maximum_block_width": 128
+    },
+    {
+      "ambient_dimension": 256,
+      "compile_speedup": 0.8587847889230753,
+      "pair_count": 128,
+      "response_absolute_error": 2.842170943040401e-14,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        128,
+        128
+      ],
+      "sector_reachable_dimensions": [
+        128,
+        128
+      ],
+      "source_nonzeros": 256,
+      "split_factorized_actions": 256,
+      "split_maximum_block_width": 128,
+      "symmetry_compile_ms": 37.579167,
+      "unsplit_compile_ms": 32.272417,
+      "unsplit_factorized_actions": 384,
+      "unsplit_maximum_block_width": 256
+    },
+    {
+      "ambient_dimension": 512,
+      "compile_speedup": 1.151597164602367,
+      "pair_count": 256,
+      "response_absolute_error": 4.263256414560601e-14,
+      "sector_count": 2,
+      "sector_minimal_dimensions": [
+        256,
+        256
+      ],
+      "sector_reachable_dimensions": [
+        256,
+        256
+      ],
+      "source_nonzeros": 512,
+      "split_factorized_actions": 512,
+      "split_maximum_block_width": 256,
+      "symmetry_compile_ms": 108.16825,
+      "unsplit_compile_ms": 124.56625,
+      "unsplit_factorized_actions": 768,
+      "unsplit_maximum_block_width": 512
+    }
+  ],
+  "timing": "median source-fixed compilation after one warmup"
+}

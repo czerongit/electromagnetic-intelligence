@@ -1,0 +1,169 @@
+{
+  "amortized_seconds_per_query": {
+    "cpu": {
+      "1": 0.013263004921498123,
+      "10": 0.0013316561443275532,
+      "100": 0.00013852126661049625,
+      "1000": 1.9207778838790547e-05,
+      "break_even_batches_against_direct_response": 0.5553813155518712
+    },
+    "mps": {
+      "1": 0.013173652748662334,
+      "10": 0.0013217628813436022,
+      "100": 0.00013657389461172898,
+      "1000": 1.8054995938541652e-05,
+      "break_even_batches_against_direct_response": 0.5373388417669059
+    }
+  },
+  "backends": [
+    {
+      "backend": "cpu",
+      "calibration_seconds": 0.11382374999811873,
+      "dtype": "torch.float64",
+      "estimated_column_read_bytes": 100040896,
+      "estimated_output_write_bytes": 16678912,
+      "estimated_weight_index_read_bytes": 49136,
+      "executor_initialization_seconds": 0.05700583301950246,
+      "input_transfer_bytes": 53240,
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "native_device_dispatches": 1,
+      "native_median_microseconds": 2751.6875,
+      "output_bytes": 16678912,
+      "output_transfer_seconds": 9.08400397747755e-06,
+      "plan_lowering_seconds": 0.022470957948826253,
+      "plan_retained_bytes": 60233024,
+      "readout_median_seconds": 0.00019749949569813907,
+      "request_preparation_seconds": 0.000265665992628783,
+      "response_median_seconds": 0.0028401875169947743,
+      "response_scalar_multiply_adds": 12505112,
+      "selected_executor": "native",
+      "synchronized": false,
+      "tensor_host_operator_calls": 1,
+      "tensor_median_microseconds": 2767.6665000000003
+    },
+    {
+      "backend": "mps",
+      "calibration_seconds": 0.09647824999410659,
+      "dtype": "torch.float32",
+      "estimated_column_read_bytes": 50020448,
+      "estimated_output_write_bytes": 8339456,
+      "estimated_weight_index_read_bytes": 36852,
+      "executor_initialization_seconds": 0.0012574999709613621,
+      "input_transfer_bytes": 40956,
+      "maximum_absolute_error": 4.2815914702565294e-09,
+      "native_device_dispatches": 1,
+      "native_median_microseconds": 1068.3125,
+      "output_bytes": 8339456,
+      "output_transfer_seconds": 0.0005154579994268715,
+      "plan_lowering_seconds": 0.04864037502557039,
+      "plan_retained_bytes": 30116512,
+      "readout_median_seconds": 0.00019629148300737143,
+      "request_preparation_seconds": 0.0019867910305038095,
+      "response_median_seconds": 0.0017899999802466482,
+      "response_scalar_multiply_adds": 12505112,
+      "selected_executor": "native",
+      "synchronized": true,
+      "tensor_host_operator_calls": 1,
+      "tensor_median_microseconds": 1535.9795
+    }
+  ],
+  "boundaries": {
+    "downloads": "forbidden by explicit existing parquet paths",
+    "generative_language_model": "not established",
+    "semantic_nonlocal_relations": "not determined",
+    "source_determination": "raw WikiText-2 local occurrence law"
+  },
+  "compiled_response_bytes": 61613224,
+  "contract": "raw-text complete lifecycle 94.1",
+  "matched_complete_lifecycle": {
+    "cpu": {
+      "1": {
+        "compiled_total_seconds": 6.790658519807039,
+        "direct_total_seconds": 7.911799166438868
+      },
+      "10": {
+        "compiled_total_seconds": 6.818079458957072,
+        "direct_total_seconds": 30.63342116511194
+      },
+      "100": {
+        "compiled_total_seconds": 7.0922888504574075,
+        "direct_total_seconds": 257.84964115184266
+      },
+      "1000": {
+        "compiled_total_seconds": 9.83438276546076,
+        "direct_total_seconds": 2530.01184101915
+      }
+    },
+    "mps": {
+      "1": {
+        "compiled_total_seconds": 6.744910207315115,
+        "direct_total_seconds": 7.9117979584261775
+      },
+      "10": {
+        "compiled_total_seconds": 6.767425952479243,
+        "direct_total_seconds": 30.633409084985033
+      },
+      "100": {
+        "compiled_total_seconds": 6.9925834041205235,
+        "direct_total_seconds": 257.8495203505736
+      },
+      "1000": {
+        "compiled_total_seconds": 9.244157920533326,
+        "direct_total_seconds": 2530.010633006459
+      }
+    }
+  },
+  "minimum_occurrences": 50,
+  "operator_nonzeros": 3296117,
+  "phase_seconds": {
+    "common_lifecycle": 6.594045541831292,
+    "compile_identity_response": 0.037982459005434066,
+    "compiled_field_specific_lifecycle": 1.2068710419116542,
+    "determine_source": 5.036403708974831,
+    "direct_oracle_once": 2.559067333000712,
+    "direct_response_median": 2.524427167023532,
+    "encode_contexts_and_targets": 0.0008682089974172413,
+    "extract_held_out_incidents": 0.16806670796358958,
+    "load_test": 0.0026826660032384098,
+    "load_train": 0.179153207980562,
+    "lower_response_ir": 0.02550608298042789,
+    "lower_sparse_source": 1.1327951669809408,
+    "prepare_compiled_incidents": 0.00029979198006913066,
+    "prepare_relation_incidents": 0.010287540964782238,
+    "shared_source_lifecycle": 5.387174499919638
+  },
+  "quality": {
+    "coverage": 0.9921875,
+    "top_1_accuracy": 0.15234375,
+    "top_5_accuracy": 0.345703125
+  },
+  "queries": 512,
+  "radius": 3,
+  "relation_features": 170676,
+  "selected_operator_nonzeros": 614708,
+  "selected_relation_features": 1849,
+  "source_bytes": 80504792,
+  "source_replacement": {
+    "artifact_digest_changed": true,
+    "audit_total_seconds": 9.449223415984306,
+    "calibration_seconds": 0.07901620800839737,
+    "compile_identity_response_seconds": 0.03603845799807459,
+    "determine_source_seconds": 5.503001416975167,
+    "direct_oracle_seconds": 2.5535264579812065,
+    "execution_lifecycle_seconds": 6.8956969580031,
+    "executor_initialization_seconds": 0.0004879999905824661,
+    "lower_backend_plan_seconds": 0.018629750004038215,
+    "lower_response_ir_seconds": 0.025278582994360477,
+    "lower_sparse_source_seconds": 1.2186461669625714,
+    "maximum_absolute_error": 6.938893903907228e-18,
+    "prepare_backend_request_seconds": 0.0002205409691669047,
+    "prepare_compiled_incidents_seconds": 0.00026291696121916175,
+    "prepare_relation_incidents_seconds": 0.01040508400183171,
+    "response_seconds": 0.002745959034655243,
+    "selected_executor": "native",
+    "source_digest_changed": true
+  },
+  "terms": 4072,
+  "test_sha256": "e6b3913da714b63a60a571698b20ff15441fb015783ea1b5285f707d4f2f00a9",
+  "train_sha256": "dfc27e4360c639dc1fba1e403bfffd53af4a5c75d5363b5724d49bf12d07cce6"
+}

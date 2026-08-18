@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://doi.org/10.5281/zenodo.21986663/run-manifest.schema.json",
+  "title": "Information-field benchmark run manifest",
+  "type": "object",
+  "required": ["schema", "conditions", "machine"],
+  "properties": {
+    "schema": {"type": "string", "minLength": 1},
+    "conditions": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "machine": {"type": "object"},
+    "environment": {"type": "object"},
+    "implementation_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "cuda_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

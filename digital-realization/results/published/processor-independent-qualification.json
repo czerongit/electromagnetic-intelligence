@@ -1,0 +1,174 @@
+{
+  "capabilities": {
+    "cpu": {
+      "available": true,
+      "reason": "CPU tensor execution is available",
+      "supported_dtypes": [
+        "torch.float64",
+        "torch.float32"
+      ]
+    },
+    "cuda": {
+      "available": false,
+      "reason": "CUDA device is unavailable",
+      "supported_dtypes": [
+        "torch.float64",
+        "torch.float32",
+        "torch.float16"
+      ]
+    },
+    "mps": {
+      "available": true,
+      "reason": "MPS device is available",
+      "supported_dtypes": [
+        "torch.float32",
+        "torch.float16"
+      ]
+    }
+  },
+  "contract": "response backend precision qualification 90.1",
+  "cuda_request_decision": {
+    "fallback_used": true,
+    "reason": "fallback to CPU because CUDA device is unavailable or dtype is unsupported",
+    "selected_backend": "cpu",
+    "selected_dtype": "torch.float32"
+  },
+  "results": [
+    {
+      "absolute_tolerance": 1e-12,
+      "artifact_digest": "60bbd8f0d52f20d3b804a53062cb4047601462b600f2479ab92ffe0af956cf89",
+      "backend": "cpu",
+      "cases": 1,
+      "contract": "static-columns",
+      "dtype": "torch.float64",
+      "fusion_claimed": false,
+      "lowering": "structured weighted-column reduction",
+      "maximum_absolute_error": 0.0,
+      "maximum_relative_error": 0.0,
+      "passed": true,
+      "plan_digest": "1ee0eacfa3c3948dfd7cb5eaeeb17bc2676dd4a5c20a934eaf296ea81469ec58",
+      "relative_tolerance": 1e-12,
+      "retained_bytes": 32,
+      "values_compared": 4
+    },
+    {
+      "absolute_tolerance": 1e-12,
+      "artifact_digest": "a03abcd29f808793b6005547551f26980ce2170d65f6fa3b591bc7d692953c81",
+      "backend": "cpu",
+      "cases": 1,
+      "contract": "fixed-time",
+      "dtype": "torch.float64",
+      "fusion_claimed": false,
+      "lowering": "single packed linear application",
+      "maximum_absolute_error": 0.0,
+      "maximum_relative_error": 0.0,
+      "passed": true,
+      "plan_digest": "fbe924950bb383be44bf529cbc0f32c475f59966560957c4649bd80999886e88",
+      "relative_tolerance": 1e-12,
+      "retained_bytes": 64,
+      "values_compared": 2
+    },
+    {
+      "absolute_tolerance": 1e-12,
+      "artifact_digest": "f185d9319bd42449549bacde4fd16a7ccb6a5da9a45962267f60fdc02179d882",
+      "backend": "cpu",
+      "cases": 1,
+      "contract": "sampled-times",
+      "dtype": "torch.float64",
+      "fusion_claimed": false,
+      "lowering": "single flattened sampled linear application",
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "maximum_relative_error": 1.1272693444304418e-16,
+      "passed": true,
+      "plan_digest": "e54814704f7f4d341439a2872b20eeea73d94481f82cdeb183a1d1f0b24225c3",
+      "relative_tolerance": 1e-12,
+      "retained_bytes": 200,
+      "values_compared": 6
+    },
+    {
+      "absolute_tolerance": 1e-12,
+      "artifact_digest": "4b506d32f4e01f32b8623f9c40ee8a36a6ac686c16999edf2e43cc3960974cb9",
+      "backend": "cpu",
+      "cases": 1,
+      "contract": "regular-grid",
+      "dtype": "torch.float64",
+      "fusion_claimed": false,
+      "lowering": "structured diagonal modal recurrence",
+      "maximum_absolute_error": 0.0,
+      "maximum_relative_error": 0.0,
+      "passed": true,
+      "plan_digest": "455cc994516d05146edc6fd44ccd8355f7cf9b20c6a8b06be4c7dce86e95f2e0",
+      "relative_tolerance": 1e-12,
+      "retained_bytes": 216,
+      "values_compared": 14
+    },
+    {
+      "absolute_tolerance": 2e-05,
+      "artifact_digest": "60bbd8f0d52f20d3b804a53062cb4047601462b600f2479ab92ffe0af956cf89",
+      "backend": "mps",
+      "cases": 1,
+      "contract": "static-columns",
+      "dtype": "torch.float32",
+      "fusion_claimed": false,
+      "lowering": "structured weighted-column reduction",
+      "maximum_absolute_error": 1.1920928910669204e-08,
+      "maximum_relative_error": 5.96046451084575e-08,
+      "passed": true,
+      "plan_digest": "4afc12b421dffa40313b9c5214809739b146c25a4da710a9f549132cd93cdc83",
+      "relative_tolerance": 0.0002,
+      "retained_bytes": 16,
+      "values_compared": 4
+    },
+    {
+      "absolute_tolerance": 2e-05,
+      "artifact_digest": "a03abcd29f808793b6005547551f26980ce2170d65f6fa3b591bc7d692953c81",
+      "backend": "mps",
+      "cases": 1,
+      "contract": "fixed-time",
+      "dtype": "torch.float32",
+      "fusion_claimed": false,
+      "lowering": "single packed linear application",
+      "maximum_absolute_error": 2.0521777832627208e-08,
+      "maximum_relative_error": 7.538556749255199e-08,
+      "passed": true,
+      "plan_digest": "ec1799fb55a2743916e77155113ff5b9fb5befb2dc6cd87c0962e35b03ae21ef",
+      "relative_tolerance": 0.0002,
+      "retained_bytes": 32,
+      "values_compared": 2
+    },
+    {
+      "absolute_tolerance": 2e-05,
+      "artifact_digest": "f185d9319bd42449549bacde4fd16a7ccb6a5da9a45962267f60fdc02179d882",
+      "backend": "mps",
+      "cases": 1,
+      "contract": "sampled-times",
+      "dtype": "torch.float32",
+      "fusion_claimed": false,
+      "lowering": "single flattened sampled linear application",
+      "maximum_absolute_error": 4.1155351737653945e-08,
+      "maximum_relative_error": 9.056149433047438e-08,
+      "passed": true,
+      "plan_digest": "2b0578b22b0058e45824c4e88336455ce9a7ead7d54460c0b31f408c54351984",
+      "relative_tolerance": 0.0002,
+      "retained_bytes": 104,
+      "values_compared": 6
+    },
+    {
+      "absolute_tolerance": 2e-05,
+      "artifact_digest": "4b506d32f4e01f32b8623f9c40ee8a36a6ac686c16999edf2e43cc3960974cb9",
+      "backend": "mps",
+      "cases": 1,
+      "contract": "regular-grid",
+      "dtype": "torch.float32",
+      "fusion_claimed": false,
+      "lowering": "structured diagonal modal recurrence",
+      "maximum_absolute_error": 5.162835214900241e-09,
+      "maximum_relative_error": 2.0570427892362966e-07,
+      "passed": true,
+      "plan_digest": "702b56c6bba5ae90e9680839ab700192b5736ca14bb540d30b249286fbdc1c08",
+      "relative_tolerance": 0.0002,
+      "retained_bytes": 108,
+      "values_compared": 14
+    }
+  ]
+}

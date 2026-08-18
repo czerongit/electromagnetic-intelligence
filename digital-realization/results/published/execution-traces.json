@@ -1,0 +1,249 @@
+{
+  "contract": "prepared response dispatch audit 91.1",
+  "records": [
+    {
+      "backend": "cpu",
+      "backend_kernel_trace": true,
+      "contract": "static-columns",
+      "core_calls": 3,
+      "core_operation_counts": {
+        "aten::copy_": 1,
+        "aten::cumsum": 1,
+        "aten::index_add_": 1
+      },
+      "dtype": "torch.float64",
+      "fusion_certified": false,
+      "input_transfer_bytes": 72,
+      "operation_counts": {
+        "aten::_embedding_bag_forward_only": 1,
+        "aten::as_strided": 2,
+        "aten::copy_": 1,
+        "aten::cumsum": 1,
+        "aten::embedding_bag": 1,
+        "aten::empty": 5,
+        "aten::empty_like": 1,
+        "aten::fill_": 1,
+        "aten::index_add_": 1,
+        "aten::narrow": 1,
+        "aten::ones_like": 1,
+        "aten::select": 1,
+        "aten::slice": 1,
+        "aten::sub_": 1,
+        "aten::to": 1
+      },
+      "plan_digest": "1ee0eacfa3c3948dfd7cb5eaeeb17bc2676dd4a5c20a934eaf296ea81469ec58",
+      "reason": "weighted-column reduction still uses multiple CPU primitives or an unverified device wrapper",
+      "retained_bytes": 32,
+      "synchronized_after": false,
+      "synchronized_before": false,
+      "total_aten_calls": 20
+    },
+    {
+      "backend": "cpu",
+      "backend_kernel_trace": true,
+      "contract": "fixed-time",
+      "core_calls": 1,
+      "core_operation_counts": {
+        "aten::addmv_": 1
+      },
+      "dtype": "torch.float64",
+      "fusion_certified": true,
+      "input_transfer_bytes": 32,
+      "operation_counts": {
+        "aten::addmv_": 1,
+        "aten::empty": 1,
+        "aten::matmul": 1,
+        "aten::mv": 1
+      },
+      "plan_digest": "fbe924950bb383be44bf529cbc0f32c475f59966560957c4649bd80999886e88",
+      "reason": "one measured CPU core operator implements the contracted response",
+      "retained_bytes": 64,
+      "synchronized_after": false,
+      "synchronized_before": false,
+      "total_aten_calls": 4
+    },
+    {
+      "backend": "cpu",
+      "backend_kernel_trace": true,
+      "contract": "sampled-times",
+      "core_calls": 1,
+      "core_operation_counts": {
+        "aten::addmv_": 1
+      },
+      "dtype": "torch.float64",
+      "fusion_certified": true,
+      "input_transfer_bytes": 32,
+      "operation_counts": {
+        "aten::addmv_": 1,
+        "aten::empty": 1,
+        "aten::matmul": 1,
+        "aten::mv": 1,
+        "aten::reshape": 1,
+        "aten::view": 1
+      },
+      "plan_digest": "e54814704f7f4d341439a2872b20eeea73d94481f82cdeb183a1d1f0b24225c3",
+      "reason": "one measured CPU core operator implements the contracted response",
+      "retained_bytes": 200,
+      "synchronized_after": false,
+      "synchronized_before": false,
+      "total_aten_calls": 6
+    },
+    {
+      "backend": "cpu",
+      "backend_kernel_trace": true,
+      "contract": "regular-grid",
+      "core_calls": 48,
+      "core_operation_counts": {
+        "aten::add": 16,
+        "aten::addmv_": 8,
+        "aten::mul": 24
+      },
+      "dtype": "torch.float64",
+      "fusion_certified": false,
+      "input_transfer_bytes": 64,
+      "operation_counts": {
+        "aten::add": 16,
+        "aten::addmv_": 8,
+        "aten::as_strided": 4,
+        "aten::cat": 1,
+        "aten::empty": 10,
+        "aten::matmul": 8,
+        "aten::mul": 24,
+        "aten::mv": 8,
+        "aten::select": 4,
+        "aten::stack": 1,
+        "aten::unbind": 1,
+        "aten::view": 1,
+        "aten::zero_": 2,
+        "aten::zeros": 2
+      },
+      "plan_digest": "455cc994516d05146edc6fd44ccd8355f7cf9b20c6a8b06be4c7dce86e95f2e0",
+      "reason": "structured recurrence still dispatches force, state updates, and readout separately",
+      "retained_bytes": 216,
+      "synchronized_after": false,
+      "synchronized_before": false,
+      "total_aten_calls": 90
+    },
+    {
+      "backend": "mps",
+      "backend_kernel_trace": false,
+      "contract": "static-columns",
+      "core_calls": 1,
+      "core_operation_counts": {
+        "aten::_embedding_bag_forward_only": 1
+      },
+      "dtype": "torch.float32",
+      "fusion_certified": false,
+      "input_transfer_bytes": 60,
+      "operation_counts": {
+        "aten::_embedding_bag_forward_only": 1,
+        "aten::embedding_bag": 1,
+        "aten::empty": 4
+      },
+      "plan_digest": "4afc12b421dffa40313b9c5214809739b146c25a4da710a9f549132cd93cdc83",
+      "reason": "weighted-column reduction still uses multiple CPU primitives or an unverified device wrapper",
+      "retained_bytes": 16,
+      "synchronized_after": true,
+      "synchronized_before": true,
+      "total_aten_calls": 6
+    },
+    {
+      "backend": "mps",
+      "backend_kernel_trace": false,
+      "contract": "fixed-time",
+      "core_calls": 1,
+      "core_operation_counts": {
+        "aten::mm": 1
+      },
+      "dtype": "torch.float32",
+      "fusion_certified": false,
+      "input_transfer_bytes": 16,
+      "operation_counts": {
+        "aten::addmv_": 1,
+        "aten::as_strided": 2,
+        "aten::empty": 1,
+        "aten::matmul": 1,
+        "aten::mm": 1,
+        "aten::mv": 1,
+        "aten::squeeze": 1,
+        "aten::unsqueeze": 1
+      },
+      "plan_digest": "ec1799fb55a2743916e77155113ff5b9fb5befb2dc6cd87c0962e35b03ae21ef",
+      "reason": "host operator trace is insufficient to certify backend kernel fusion",
+      "retained_bytes": 32,
+      "synchronized_after": true,
+      "synchronized_before": true,
+      "total_aten_calls": 9
+    },
+    {
+      "backend": "mps",
+      "backend_kernel_trace": false,
+      "contract": "sampled-times",
+      "core_calls": 1,
+      "core_operation_counts": {
+        "aten::mm": 1
+      },
+      "dtype": "torch.float32",
+      "fusion_certified": false,
+      "input_transfer_bytes": 16,
+      "operation_counts": {
+        "aten::addmv_": 1,
+        "aten::as_strided": 2,
+        "aten::empty": 1,
+        "aten::matmul": 1,
+        "aten::mm": 1,
+        "aten::mv": 1,
+        "aten::reshape": 1,
+        "aten::squeeze": 1,
+        "aten::unsqueeze": 1,
+        "aten::view": 1
+      },
+      "plan_digest": "2b0578b22b0058e45824c4e88336455ce9a7ead7d54460c0b31f408c54351984",
+      "reason": "host operator trace is insufficient to certify backend kernel fusion",
+      "retained_bytes": 104,
+      "synchronized_after": true,
+      "synchronized_before": true,
+      "total_aten_calls": 11
+    },
+    {
+      "backend": "mps",
+      "backend_kernel_trace": false,
+      "contract": "regular-grid",
+      "core_calls": 48,
+      "core_operation_counts": {
+        "aten::add": 16,
+        "aten::mm": 8,
+        "aten::mul": 24
+      },
+      "dtype": "torch.float32",
+      "fusion_certified": false,
+      "input_transfer_bytes": 32,
+      "operation_counts": {
+        "aten::add": 16,
+        "aten::addmv_": 8,
+        "aten::as_strided": 20,
+        "aten::cat": 1,
+        "aten::empty": 10,
+        "aten::fill_": 2,
+        "aten::matmul": 8,
+        "aten::mm": 8,
+        "aten::mul": 24,
+        "aten::mv": 8,
+        "aten::select": 4,
+        "aten::squeeze": 8,
+        "aten::stack": 1,
+        "aten::unbind": 1,
+        "aten::unsqueeze": 8,
+        "aten::view": 1,
+        "aten::zero_": 2,
+        "aten::zeros": 2
+      },
+      "plan_digest": "702b56c6bba5ae90e9680839ab700192b5736ca14bb540d30b249286fbdc1c08",
+      "reason": "structured recurrence still dispatches force, state updates, and readout separately",
+      "retained_bytes": 108,
+      "synchronized_after": true,
+      "synchronized_before": true,
+      "total_aten_calls": 132
+    }
+  ]
+}

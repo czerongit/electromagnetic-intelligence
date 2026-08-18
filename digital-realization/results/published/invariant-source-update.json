@@ -1,0 +1,56 @@
+{
+  "contract": "exact source-change update with mandatory global fallback",
+  "results": [
+    {
+      "ambient_dimension": 128,
+      "expanding_edit_outside_residual": 0.125,
+      "expanding_edit_status": "global-recompiled",
+      "expanding_edit_total_ms": 0.707541,
+      "full_matrix_free_recompile_ms": 0.514041,
+      "full_recompile_factor_applications": 10,
+      "hidden_edit_ms": 0.258208,
+      "hidden_edit_response_change": 0.0,
+      "hidden_edit_status": "reduced-exact",
+      "previous_reachable_dimension": 8,
+      "within_update_factor_applications": 1,
+      "within_update_ms": 0.313167,
+      "within_update_response_error": 1.734723475976807e-17,
+      "within_update_speedup": 1.6414277366389178,
+      "within_update_status": "reduced-exact"
+    },
+    {
+      "ambient_dimension": 512,
+      "expanding_edit_outside_residual": 0.125,
+      "expanding_edit_status": "global-recompiled",
+      "expanding_edit_total_ms": 1.730792,
+      "full_matrix_free_recompile_ms": 1.347791,
+      "full_recompile_factor_applications": 10,
+      "hidden_edit_ms": 0.417334,
+      "hidden_edit_response_change": 0.0,
+      "hidden_edit_status": "reduced-exact",
+      "previous_reachable_dimension": 8,
+      "within_update_factor_applications": 1,
+      "within_update_ms": 0.463958,
+      "within_update_response_error": 1.0408340855860843e-17,
+      "within_update_speedup": 2.904984933981093,
+      "within_update_status": "reduced-exact"
+    },
+    {
+      "ambient_dimension": 2048,
+      "expanding_edit_outside_residual": 0.125,
+      "expanding_edit_status": "global-recompiled",
+      "expanding_edit_total_ms": 3.08625,
+      "full_matrix_free_recompile_ms": 2.42025,
+      "full_recompile_factor_applications": 10,
+      "hidden_edit_ms": 0.674917,
+      "hidden_edit_response_change": 0.0,
+      "hidden_edit_status": "reduced-exact",
+      "previous_reachable_dimension": 8,
+      "within_update_factor_applications": 1,
+      "within_update_ms": 0.871584,
+      "within_update_response_error": 0.0,
+      "within_update_speedup": 2.776840786430223,
+      "within_update_status": "reduced-exact"
+    }
+  ]
+}

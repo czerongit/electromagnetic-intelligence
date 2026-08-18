@@ -1,0 +1,27 @@
+{
+  "schema": "information-field.published-results.v1",
+  "package_version": "0.1.0",
+  "archive_doi": "https://doi.org/10.5281/zenodo.21986663",
+  "manuscript_section": "Digital realization and exact response reduction",
+  "experimental_appendix": "Computational experiments",
+  "checksum_file": "CHECKSUMS.sha256",
+  "records": [
+    {"path": "retrieval-flashattention", "experiment": "relation-coordinate retrieval and FlashAttention"},
+    {"path": "minimal-causal-carrier.json", "experiment": "minimal reachable and observable carrier"},
+    {"path": "fixed-time-response.json", "experiment": "fixed-time Green response"},
+    {"path": "matrix-free-construction.json", "experiment": "matrix-free carrier construction"},
+    {"path": "invariant-source-update.json", "experiment": "invariant source update"},
+    {"path": "augmented-source-update.json", "experiment": "carrier-augmenting source update"},
+    {"path": "component-restriction.json", "experiment": "disconnected-component restriction"},
+    {"path": "symmetry-reduction.json", "experiment": "involutive symmetry reduction"},
+    {"path": "processor-independent-qualification.json", "experiment": "processor-independent response accuracy"},
+    {"path": "execution-traces.json", "experiment": "tensor execution traces"},
+    {"path": "cpu-kernels.json", "experiment": "CPU response kernels"},
+    {"path": "metal-kernels.json", "experiment": "Metal response kernels"},
+    {"path": "cuda-kernels.json", "experiment": "CUDA response kernels"},
+    {"path": "metal-wide-kernels.json", "experiment": "wide Metal recurrence"},
+    {"path": "cuda-wide-kernels.json", "experiment": "wide CUDA recurrence"},
+    {"path": "wikitext-lifecycle.json", "experiment": "WikiText source and response lifecycle"},
+    {"path": "temporal-event-composition", "experiment": "constant-source event composition"}
+  ]
+}

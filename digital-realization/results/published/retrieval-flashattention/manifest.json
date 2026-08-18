@@ -1,0 +1,292 @@
+{
+  "comparison_contract": "exact Sprint 76 relation-native field versus forced FP16 FlashAttention",
+  "conditions": [
+    {
+      "batch": 8,
+      "bindings": 4,
+      "identifier": "l64-k4",
+      "prefix": 64
+    },
+    {
+      "batch": 8,
+      "bindings": 8,
+      "identifier": "l128-k8",
+      "prefix": 128
+    },
+    {
+      "batch": 4,
+      "bindings": 16,
+      "identifier": "l256-k16",
+      "prefix": 256
+    },
+    {
+      "batch": 1,
+      "bindings": 64,
+      "identifier": "l512-k64",
+      "prefix": 512
+    }
+  ],
+  "cuda_source_sha256": "9bf71400b7abd0d4e3e8b876926d7688e43bda6c386a73a1bcce560bc961d4e1",
+  "detected_machine": {
+    "compute_capability": [
+      8,
+      9
+    ],
+    "device_name": "NVIDIA RTX 5000 Ada Generation",
+    "driver": null,
+    "memory_gib": 31.45147705078125,
+    "torch_cuda": "13.0"
+  },
+  "implementation_sha256": "d4b041b1b36664833fa99c883b975a0488f09bb39fb61435a5e1fae495b04956",
+  "machine": {
+    "access_method": "ssh smtz@100.93.225.3",
+    "expected_gpu_model": "NVIDIA RTX 5000 Ada Generation",
+    "expected_memory_gib": 31.0,
+    "host_id": "labpc2",
+    "notes": "Ephemeral isolated Sprint 76 qualification; no credentials stored.",
+    "permitted_run_seconds": 3600
+  },
+  "protocol_sha256": "2d9d1a381a733ae39978ca9023d7971e836d7a04dbac15914ecf43440e5dfa9e",
+  "schema": "sprint-97.static-selector-flash.v1",
+  "selector_audits": {
+    "l128-k8": {
+      "all_full_relation_rank": true,
+      "batch_selections": [
+        {
+          "batch": 0,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 1,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 2,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 3,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 4,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 5,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 6,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        },
+        {
+          "batch": 7,
+          "column_work": 16,
+          "executor": "columns",
+          "outputs": 16,
+          "rank": 8,
+          "rank_factor_work": 136,
+          "relations": 8,
+          "support": 1
+        }
+      ],
+      "rank_factor_selected": false,
+      "selected_executor": "columns"
+    },
+    "l256-k16": {
+      "all_full_relation_rank": true,
+      "batch_selections": [
+        {
+          "batch": 0,
+          "column_work": 32,
+          "executor": "columns",
+          "outputs": 32,
+          "rank": 16,
+          "rank_factor_work": 528,
+          "relations": 16,
+          "support": 1
+        },
+        {
+          "batch": 1,
+          "column_work": 32,
+          "executor": "columns",
+          "outputs": 32,
+          "rank": 16,
+          "rank_factor_work": 528,
+          "relations": 16,
+          "support": 1
+        },
+        {
+          "batch": 2,
+          "column_work": 32,
+          "executor": "columns",
+          "outputs": 32,
+          "rank": 16,
+          "rank_factor_work": 528,
+          "relations": 16,
+          "support": 1
+        },
+        {
+          "batch": 3,
+          "column_work": 32,
+          "executor": "columns",
+          "outputs": 32,
+          "rank": 16,
+          "rank_factor_work": 528,
+          "relations": 16,
+          "support": 1
+        }
+      ],
+      "rank_factor_selected": false,
+      "selected_executor": "columns"
+    },
+    "l512-k64": {
+      "all_full_relation_rank": true,
+      "batch_selections": [
+        {
+          "batch": 0,
+          "column_work": 128,
+          "executor": "columns",
+          "outputs": 128,
+          "rank": 64,
+          "rank_factor_work": 8256,
+          "relations": 64,
+          "support": 1
+        }
+      ],
+      "rank_factor_selected": false,
+      "selected_executor": "columns"
+    },
+    "l64-k4": {
+      "all_full_relation_rank": true,
+      "batch_selections": [
+        {
+          "batch": 0,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 1,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 2,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 3,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 4,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 5,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 6,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        },
+        {
+          "batch": 7,
+          "column_work": 8,
+          "executor": "columns",
+          "outputs": 8,
+          "rank": 4,
+          "rank_factor_work": 36,
+          "relations": 4,
+          "support": 1
+        }
+      ],
+      "rank_factor_selected": false,
+      "selected_executor": "columns"
+    }
+  },
+  "speed_claim_scope": "static query-restricted response only"
+}

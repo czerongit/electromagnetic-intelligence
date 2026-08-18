@@ -1,0 +1,55 @@
+{
+  "comparison_boundary": "matched stateful recurrence; no FlashAttention ratio",
+  "conditions": [
+    {
+      "batch": 64,
+      "identifier": "t256-e4",
+      "modes": 64,
+      "run_lengths": [
+        64,
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "batch": 64,
+      "identifier": "t1024-e4",
+      "modes": 64,
+      "run_lengths": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "batch": 64,
+      "identifier": "t4096-e4",
+      "modes": 64,
+      "run_lengths": [
+        1024,
+        1024,
+        1024,
+        1024
+      ]
+    }
+  ],
+  "cuda_source_sha256": "707afc1f6dcc18dfda0acd2220d3de729e4cd5cc372437807ab435fc562edd17",
+  "detected_machine": {
+    "compute_capability": "8.9",
+    "device_name": "NVIDIA RTX 5000 Ada Generation",
+    "memory_gib": 31.45147705078125,
+    "torch_cuda": "13.0"
+  },
+  "dtype": "float32",
+  "machine": {
+    "access_method": "ssh smtz@100.93.225.3",
+    "expected_gpu_model": "NVIDIA RTX 5000 Ada Generation",
+    "expected_memory_gib": 31.0,
+    "host_id": "labpc2",
+    "notes": "Ephemeral isolated Sprint 76 qualification; no credentials stored.",
+    "permitted_run_seconds": 3600
+  },
+  "schema": "sprint-97.temporal-event-cuda.v1"
+}

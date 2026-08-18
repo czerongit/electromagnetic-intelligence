@@ -1,0 +1,58 @@
+{
+  "component_size": 16,
+  "contract": "exact disconnected-component causal compilation",
+  "results": [
+    {
+      "ambient_nonzeros": 240,
+      "ambient_quantities": 128,
+      "ambient_relations": 120,
+      "compile_speedup": 0.9974447178751497,
+      "component_compile_ms": 2.054959,
+      "component_count": 8,
+      "global_matrix_free_compile_ms": 2.049708,
+      "response_absolute_error": 2.220446049250313e-16,
+      "selected_nonzeros": 30,
+      "selected_quantities": 16,
+      "selected_relations": 15
+    },
+    {
+      "ambient_nonzeros": 960,
+      "ambient_quantities": 512,
+      "ambient_relations": 480,
+      "compile_speedup": 2.4359358974277456,
+      "component_compile_ms": 1.572667,
+      "component_count": 32,
+      "global_matrix_free_compile_ms": 3.830916,
+      "response_absolute_error": 2.7755575615628914e-16,
+      "selected_nonzeros": 30,
+      "selected_quantities": 16,
+      "selected_relations": 15
+    },
+    {
+      "ambient_nonzeros": 3840,
+      "ambient_quantities": 2048,
+      "ambient_relations": 1920,
+      "compile_speedup": 3.3967808311997265,
+      "component_compile_ms": 2.486791,
+      "component_count": 128,
+      "global_matrix_free_compile_ms": 8.447084,
+      "response_absolute_error": 2.7755575615628914e-16,
+      "selected_nonzeros": 30,
+      "selected_quantities": 16,
+      "selected_relations": 15
+    },
+    {
+      "ambient_nonzeros": 15360,
+      "ambient_quantities": 8192,
+      "ambient_relations": 7680,
+      "compile_speedup": 3.9393606776012544,
+      "component_compile_ms": 5.342375,
+      "component_count": 512,
+      "global_matrix_free_compile_ms": 21.045542,
+      "response_absolute_error": 2.7755575615628914e-16,
+      "selected_nonzeros": 30,
+      "selected_quantities": 16,
+      "selected_relations": 15
+    }
+  ]
+}
